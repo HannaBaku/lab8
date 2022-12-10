@@ -43,6 +43,10 @@
         document.write( x[i].getElementsByTagName("student")[0].childNodes[0].nodeValue);
         document.write("</td><td>");
         a = x[i].getElementsByTagName("grade")[0].childNodes[0].nodeValue;
+        if (a == 1)
+            a = "ужас";
+        if (a == 2)
+            a = "плохо";
         if (a == 4)
             a = "хорошо";
         if (a == 3)
